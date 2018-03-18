@@ -1,0 +1,1 @@
+echo "<p> &copy; " . date("Y") . "Charlie Carbajal<"
