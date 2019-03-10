@@ -1,0 +1,100 @@
+body {
+    background-color: lightblue;
+    font-size: 12px;
+    text-align: center;
+    
+}
+header {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+
+} 
+p {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font: bold;
+}
+$primary-color: black;
+$border-radius: 15px;
+
+
+ul{
+    li{
+        display: inline-block;
+        color: black;
+        a{
+            color: $primary-color;
+            &:hover{
+                color: blueviolet;
+            }
+        }
+    }
+}
+a{
+    color: $primary-color;
+}
+
+
+@mixin boxrad($radius){
+    border-radius: $radius;
+}
+
+.box {
+    @include boxrad($border-radius);
+}
+
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
+.body {
+    color: slateblue;
+    background-color: antiquewhite;
+    
+
+}
+nav a:hover {
+     color:white;
+    background-color: black;
+    text-decoration:overline;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border: 5px solid white;
+    margin: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+

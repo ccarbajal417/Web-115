@@ -1,0 +1,99 @@
+body {
+  background-color: lightblue;
+  font-size: 16px;
+  text-align: center;
+padding: 20px;
+    margin: auto;
+}
+
+header {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font: bold;
+}
+}
+nav a:hover {
+     color:white;
+    background-color: black;
+    text-decoration:overline;
+}
+
+a {
+    font-size: 20px; 
+    text-decoration: none;
+    font-weight: 400px;
+    color: black;
+    border: 2px solid white;
+    margin: 20px;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+div {
+    margin: auto;
+    padding: inherit;
+}
+
+.container {
+    background: lightgray;
+    max-width: 800px;
+    margin: 2px auto;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+/* line 6, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+ul li {
+  display: inline-block;
+  color: black; }
+  /* line 9, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+  ul li a {
+    color: white; }
+    /* line 11, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+    ul li a:hover {
+      color: lightblue; }
+
+/* line 17, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+a {
+  color: white; }
+
+/* line 26, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+.box {
+  border-radius: 15px; }
+
+/* line 31, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+/* line 42, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+.success {
+    border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; 
+  border-color: green; }
+
+/* line 47, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+.error {
+  border-color: white; }
+
+/* line 52, /Applications/Brackets.app/Contents/samples/root/Getting Started/main.scss */
+.warning {
+  border-color: black; }
+
+/*# sourceMappingURL=main.css.map */
