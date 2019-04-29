@@ -1,0 +1,455 @@
+body {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    
+}
+header {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+
+} 
+p {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font: bold;
+}
+$primary-color: black;
+$border-radius: 15px;
+
+
+ul{
+    li{
+        display: inline-block;
+        color: black;
+        a{
+            color: $primary-color;
+            &:hover{
+                color: blueviolet;
+            }
+        }
+    }
+}
+a{
+    color: $primary-color;
+}
+
+
+@mixin boxrad($radius){
+    border-radius: $radius;
+}
+
+.box {
+    @include boxrad($border-radius);
+}
+
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
+.body {
+    color: slateblue;
+    background-color: antiquewhite;
+    
+
+}
+nav a:hover {
+     color:white;
+    background-color: black;
+    text-decoration:overline;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border: 5px solid white;
+    margin: 30px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+/* line 60, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .label-rgb:before {
+  content: "217 / 245 / 232"; }
+
+/* line 63, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .label-hsl:before {
+  content: "152deg / 58% / 91%"; }
+
+/* line 67, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .swatch {
+  background: #D9F5E8; }
+
+/* line 71, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .swatch-light {
+  background: #f9fefc; }
+
+/* line 75, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .swatch-dark {
+  background: #a7f4d0; }
+
+/* line 79, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .mixed-with-primary .swatch {
+  background: #d9f5e8; }
+
+/* line 83, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .mixed-with-primary .swatch {
+  background: #a0e6db; }
+
+/* line 87, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .mixed-with-primary .swatch {
+  background: #e6e1a9; }
+
+/* line 91, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .mixed-with-primary .swatch {
+  background: #e6c2b0; }
+
+/* line 60, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .label-rgb:before {
+  content: "55 / 203 / 194"; }
+
+/* line 63, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .label-hsl:before {
+  content: "176deg / 59% / 51%"; }
+
+/* line 67, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .swatch {
+  background: #37cbc2; }
+
+/* line 71, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .swatch-light {
+  background: #4dded5; }
+
+/* line 75, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .swatch-dark {
+  background: #16b9af; }
+
+/* line 79, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .mixed-with-secondary .swatch {
+  background: #70dacf; }
+
+/* line 83, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .mixed-with-secondary .swatch {
+  background: #37cbc2; }
+
+/* line 87, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .mixed-with-secondary .swatch {
+  background: #7dc590; }
+
+/* line 91, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .mixed-with-secondary .swatch {
+  background: #7da797; }
+
+/* line 60, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .label-rgb:before {
+  content: "255 / 187 / 51"; }
+
+/* line 63, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .label-hsl:before {
+  content: "40deg / 100% / 60%"; }
+
+/* line 67, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .swatch {
+  background: #fb3; }
+
+/* line 71, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .swatch-light {
+  background: #ffc95c; }
+
+/* line 75, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .swatch-dark {
+  background: #ffaa00; }
+
+/* line 79, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .mixed-with-tertiary .swatch {
+  background: #f2cf72; }
+
+/* line 83, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .mixed-with-tertiary .swatch {
+  background: #b9c165; }
+
+/* line 87, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .mixed-with-tertiary .swatch {
+  background: #ffbb33; }
+
+/* line 91, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .mixed-with-tertiary .swatch {
+  background: #ff9c3a; }
+
+/* line 60, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .label-rgb:before {
+  content: "255 / 99 / 71"; }
+
+/* line 63, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .label-hsl:before {
+  content: "9deg / 100% / 64%"; }
+
+/* line 67, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .swatch {
+  background: #FF6347; }
+
+/* line 71, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .swatch-light {
+  background: #ff8670; }
+
+/* line 75, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .swatch-dark {
+  background: #ff3814; }
+
+/* line 79, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .mixed-with-accent .swatch {
+  background: #f2967f; }
+
+/* line 83, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .mixed-with-accent .swatch {
+  background: #b98772; }
+
+/* line 87, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .mixed-with-accent .swatch {
+  background: #ff8240; }
+
+/* line 91, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .mixed-with-accent .swatch {
+  background: tomato; }
+
+/* line 98, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-primary .label-name:before,
+.color-primary h3.subheader:before {
+  content: "Mint"; }
+
+/* line 98, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-secondary .label-name:before,
+.color-secondary h3.subheader:before {
+  content: "Teal"; }
+
+/* line 98, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-tertiary .label-name:before,
+.color-tertiary h3.subheader:before {
+  content: "Gold"; }
+
+/* line 98, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.color-accent .label-name:before,
+.color-accent h3.subheader:before {
+  content: "Tomato"; }
+
+/* line 114, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+strong.primary-font:before,
+.type-specimen.primary-font h2:before {
+  content: "Open Sans"; }
+
+/* line 119, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+strong.accent-font:before,
+.type-specimen.accent-font h2:before {
+  content: "Bree Serif"; }
+
+/* line 133, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 139, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+h1.section-header {
+  font-size: 4rem;
+  margin-top: 4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd; }
+
+/* line 146, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+h2.section-subheader {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 5rem; }
+  /* line 151, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  h1 + h2.section-subheader {
+    margin-top: 2rem; }
+
+/* line 156, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.navbar-toggle .icon-bar {
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px; }
+
+/* line 167, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 173, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .row-eq-height > div {
+    position: relative;
+    min-height: 30px; }
+
+/* line 179, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  /* line 184, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+/* line 192, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.label {
+  color: #ddd;
+  white-space: normal;
+  text-align: left;
+  font-size: 1.5rem;
+  border-radius: 0;
+  display: block;
+  padding: 0; }
+  /* line 201, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .label:empty {
+    display: block; }
+  /* line 205, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .row-eq-height .label {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  /* line 212, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .color .label {
+    color: #000; }
+    /* line 215, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+    .color .label.label-color {
+      text-align: right;
+      font-weight: normal; }
+
+/* line 226, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.swatch {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2rem; }
+  /* line 231, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+  .swatch.swatch-small {
+    height: 50px; }
+
+/* line 236, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.mixed-with-primary h4:before {
+  content: "Mixed with 65% Mint"; }
+
+/* line 240, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.mixed-with-secondary h4:before {
+  content: "Mixed with 65% Teal"; }
+
+/* line 244, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.mixed-with-tertiary h4:before {
+  content: "Mixed with 65% Gold"; }
+
+/* line 248, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.mixed-with-accent h4:before {
+  content: "Mixed with 65% Tomato"; }
+
+/* line 257, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen h2 {
+  font-size: 7rem; }
+
+/* line 261, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen h3 {
+  font-size: 5rem; }
+
+/* line 266, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(1),
+.type-specimen span:nth-of-type(3) {
+  font-weight: bold; }
+
+/* line 271, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(3),
+.type-specimen span:nth-of-type(4) {
+  font-style: italic; }
+
+/* line 275, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(1) {
+  color: #D9F5E8; }
+
+/* line 279, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(2) {
+  color: #37cbc2; }
+
+/* line 283, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(3) {
+  color: #fb3; }
+
+/* line 287, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(4) {
+  color: #FF6347; }
+
+/* line 291, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen span:nth-of-type(5) {
+  color: #ddd; }
+
+/* line 295, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen ~ .type-specimen {
+  margin-top: 5rem; }
+
+/* line 299, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen.primary-font {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 303, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.type-specimen.accent-font {
+  font-family: "Bree Serif", serif; }
+
+/* line 311, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 4.5rem;
+  color: #16b9af; }
+
+/* line 317, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples h2, .heading-samples h3, .heading-samples h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+
+/* line 322, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples h3 {
+  color: #c4c4c4;
+  font-family: "Bree Serif", serif;
+  font-size: 2.75rem; }
+
+/* line 328, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples h4 {
+  font-weight: bold;
+  color: #7dc590; }
+
+/* line 333, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples h5 {
+  font-weight: bold; }
+
+/* line 337, B:/Dev/MCCDGM/demo/scss/css/style.scss */
+.heading-samples p {
+  line-height: 160%; }
+
+/*# sourceMappingURL=style.css.map */
